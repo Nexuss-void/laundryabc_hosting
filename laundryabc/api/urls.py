@@ -10,5 +10,5 @@ urlpatterns = [
     path('kategori/<int:pk>', KategoriLayananGetUpDel.as_view()),  # GET single + PUT + DELETE   
     path('customer', CustomerGetPost.as_view()),            # GET all + POST
     path('customer/<int:pk>', CustomerGetUpDel.as_view()),  # GET single + PUT + DELETE   
-    path('api/paket_laundry/search/', PaketLaundrySearchAPIView.as_view(), name='search-paket-laundry'),
+    path('paket_laundry/search/', PaketLaundrySearchAPIView.as_view(), name='search-paket-laundry'),
 ]
